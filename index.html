@@ -332,11 +332,34 @@
   </div>
   <script>
 
-  //addEventListener效果
+  // 「我要報名加入購物車」按鈕：顯示提示並送出 GA4 add_to_cart 事件。
     var abc = document.querySelector(".btnstyle");
-    abc.addEventListener(
-      "click",function () {alert("您已將商品加入購物車");},false
-    ); 
+    abc.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      gtag("event", "add_to_cart", {
+        currency: "新台幣",
+        value: 30.03,
+        items: [
+          {
+            item_id: "TOUR_GARDEN_AFTERNOON_DAY",
+            item_name: "花園午後一日遊",
+            affiliation: "MyParisTrip 小法旅",
+            index: 0,
+            item_brand: "MyParisTrip",
+            item_category: "花季景觀",
+            item_category2: "一日遊",
+            item_category3: "巴黎",
+            item_list_id: "upcoming_tours",
+            item_list_name: "即將出團",
+            price: 30.03,
+            quantity: 1
+          }
+        ]
+      });
+
+      alert("您已將商品加入購物車");
+    }, false);
   </script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script>
@@ -429,4 +452,3 @@
   
 </body>
 </html>
-
