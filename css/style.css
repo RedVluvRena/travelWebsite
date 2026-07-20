@@ -51,9 +51,9 @@ img {
 .bi-camera-fill::before { content: "▣"; }
 .bi-telephone::before { content: "☎"; }
 .bi-envelope::before { content: "✉"; }
-.bi-facebook::before { content: "f"; }
-.bi-instagram::before { content: "◎"; }
-.bi-chat-dots::before { content: "…"; }
+.bi-facebook::before { content: "FB"; }
+.bi-youtube::before { content: "YT"; }
+.bi-chat-dots::before { content: "LINE"; }
 
 .site-shell {
   max-width: 1440px;
