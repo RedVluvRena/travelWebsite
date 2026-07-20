@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyParisTrip | 小法旅</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+<!-- Google tag 260720(gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLBLERHEBM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZLBLERHEBM');
+</script>
+
+
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="brand-mark" href="#" aria-label="MyParisTrip 首頁">
+          <img class="brand-logo" src="images/logo.png" alt="MyParisTrip 小法旅">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="切換選單">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-4">
+            <li class="nav-item"><a class="nav-link" href="#themes">旅行指南</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tours">即將出團</a></li>
+            <li class="nav-item"><a class="nav-link" href="#spots">精選主題行程</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">總覽出發日與旅行團</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-3">
+            <a class="nav-link active px-0" href="#">會員專區</a>
+            <a class="text-primary" href="#" aria-label="購物車"><i class="bi bi-bag-heart-fill"></i></a>
+            <a class="text-primary" href="#" aria-label="會員登入"><i class="bi bi-person-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <h1>感謝您完成購買<br></h1>
+        <form class="search-pill" role="search">
+          <span class="visually-hidden">搜尋行程</span>
+          <span class="flex-grow-1"></span>
+          <i class="bi bi-search fs-4"></i>
+        </form>
+      </div>
+    </header>
+
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-md-6">
+            <h3 class="fs-6 mb-3">聯絡我們　洽詢旅行</h3>
+            <p class="mb-2"><i class="bi bi-telephone me-2"></i>02-12345677</p>
+            <p class="mb-4"><i class="bi bi-envelope me-2"></i>service@myparistrip.com</p>
+            <p class="small mb-0">Copyright © 2026 MyParisTrip. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a class="brand-mark justify-content-md-end text-white mb-3" href="#">
+              <img class="brand-logo" src="images/logo.png" alt="MyParisTrip 小法旅">
+            </a>
+            <div class="mb-3">
+              <a class="social-link" href="https://youtu.be/ZKdrC2MrI5k?si=BzhZxfjxw3vd9QHs" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a class="social-link" href="https://youtu.be/Xj73y6J496s?si=YOoNlnZHlWgJrrNJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a class="social-link" href="https://sites.google.com/view/artoojo/" target="_blank" rel="noopener noreferrer" aria-label="LINE"><i class="bi bi-chat-dots"></i></a>
+            </div>
+            <p class="small mb-0">台北市中山區巴黎路 18 號 6 樓｜統編 12345678</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+
+  // 「我要報名加入購物車」按鈕：顯示提示並送出 GA4 add_to_cart 事件。
+    var abc = document.querySelector(".btnstyle");
+    abc.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      gtag("event", "add_to_cart", {
+        currency: "新台幣",
+        value: 30.03,
+        items: [
+          {
+            item_id: "TOUR_GARDEN_AFTERNOON_DAY",
+            item_name: "花園午後一日遊",
+            affiliation: "MyParisTrip 小法旅",
+            index: 0,
+            item_brand: "MyParisTrip",
+            item_category: "花季景觀",
+            item_category2: "一日遊",
+            item_category3: "巴黎",
+            item_list_id: "upcoming_tours",
+            item_list_name: "即將出團",
+            price: 30.03,
+            quantity: 1
+          }
+        ]
+      });
+
+      alert("您已將商品加入購物車");
+    }, false);
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const spots = {
+      arc: {
+        title: "凱旋門",
+        lead: "拿破崙為紀念軍隊勝利而建，是香榭麗舍大道軸線上的重要地標。登上觀景台能一次看見星形廣場放射出的十二條大道。",
+        list: [
+          "建議安排：香榭麗舍大道、夏佑宮夜景、塞納河散步。",
+          "適合主題：城市攝影、歷史導覽、初訪巴黎。",
+          "推薦時段：黃昏前後，城市光線最有層次。"
+        ],
+        date: "推薦行程｜8 月 20 日、9 月 3 日、10 月 2 日",
+        image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=900&q=80",
+        alt: "凱旋門"
+      },
+      louvre: {
+        title: "羅浮宮",
+        lead: "從王宮到世界級博物館，羅浮宮收藏橫跨古文明與歐洲藝術史。小法旅以主題路線帶你避開迷路感，聚焦真正想看的作品。",
+        list: [
+          "建議安排：玻璃金字塔、黎塞留翼、杜樂麗花園。",
+          "適合主題：藝術史、策展觀察、經典館藏。",
+          "推薦時段：平日上午或夜間開館日。"
+        ],
+        date: "推薦行程｜8 月 20 日、9 月 10 日、10 月 7 日",
+        image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=80",
+        alt: "羅浮宮玻璃金字塔"
+      },
+      eiffel: {
+        title: "艾菲爾鐵塔",
+        lead: "巴黎最具辨識度的城市符號，白天適合從戰神廣場散步取景，夜晚則能在河岸看見鐵塔閃燈。",
+        list: [
+          "建議安排：戰神廣場、夏佑宮、塞納河遊船。",
+          "適合主題：城市漫遊、攝影、浪漫紀念日。",
+          "推薦時段：日落前一小時抵達最佳。"
+        ],
+        date: "推薦行程｜9 月 3 日、9 月 26 日、11 月 5 日",
+        image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80",
+        alt: "艾菲爾鐵塔"
+      },
+      mont: {
+        title: "聖米歇爾山",
+        lead: "位在諾曼第潮汐灘上的修道院小島，隨潮水變化呈現截然不同的景色，是法國最夢幻的世界遺產之一。",
+        list: [
+          "建議安排：修道院導覽、潮汐步道、諾曼第小鎮。",
+          "適合主題：世界遺產、建築美學、自然景觀。",
+          "推薦時段：配合潮汐表規劃一日或二日行程。"
+        ],
+        date: "推薦行程｜10 月 7 日、10 月 21 日、11 月 5 日",
+        image: "https://images.unsplash.com/photo-1518129364064-04266b5ca8e4?auto=format&fit=crop&w=900&q=80",
+        alt: "聖米歇爾山"
+      }
+    };
+
+    const title = document.querySelector("#spotTitle");
+    const lead = document.querySelector("#spotLead");
+    const list = document.querySelector("#spotList");
+    const date = document.querySelector("#spotDate");
+    const photo = document.querySelector("#spotPhoto");
+    const tabs = document.querySelectorAll(".spot-tab");
+    const markers = document.querySelectorAll(".landmark-btn");
+
+    function setSpot(key) {
+      const spot = spots[key];
+      title.textContent = spot.title;
+      lead.textContent = spot.lead;
+      list.innerHTML = spot.list.map((item) => `<li>${item}</li>`).join("");
+      date.textContent = spot.date;
+      photo.src = spot.image;
+      photo.alt = spot.alt;
+
+      tabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.spot === key));
+      markers.forEach((marker) => marker.classList.toggle("active", marker.dataset.spot === key));
+    }
+
+    [...tabs, ...markers].forEach((control) => {
+      control.addEventListener("click", () => setSpot(control.dataset.spot));
+      control.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          setSpot(control.dataset.spot);
+        }
+      });
+    });
+
+
+  </script>
+
+
+  
+</body>
+</html>

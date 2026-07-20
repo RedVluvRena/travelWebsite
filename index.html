@@ -152,7 +152,7 @@
                       <div class="card-body">
                         <h3><i class="bi bi-airplane me-1"></i>花園午後一日遊</h3>
                         <div class="tour-meta"><span>花季景觀</span><span>庭園</span><span>甜點時光</span></div>
-                        <p>以巴黎花園與甜點店為節點，安排舒服留白，適合想慢慢感受城市季節的人。</p><a href="#" type="button" class="btnstyle" >我要報名加入購物車</a>
+                        <p>以巴黎花園與甜點店為節點，安排舒服留白，適合想慢慢感受城市季節的人。</p><a href="goal.html" type="button" class="btnstyle" >我要報名加入購物車</a>
                         <div class="tour-date"><i class="bi bi-calendar2-week"></i> 9 月 26 日</div>
                       </div>
                     </article>
@@ -330,37 +330,47 @@
       </div>
     </footer>
   </div>
-  <script>
 
-  // 「我要報名加入購物車」按鈕：顯示提示並送出 GA4 add_to_cart 事件。
-    var abc = document.querySelector(".btnstyle");
-    abc.addEventListener("click", function (event) {
-      event.preventDefault();
 
-      gtag("event", "add_to_cart", {
-        currency: "新台幣",
-        value: 30.03,
-        items: [
-          {
-            item_id: "TOUR_GARDEN_AFTERNOON_DAY",
-            item_name: "花園午後一日遊",
-            affiliation: "MyParisTrip 小法旅",
-            index: 0,
-            item_brand: "MyParisTrip",
-            item_category: "花季景觀",
-            item_category2: "一日遊",
-            item_category3: "巴黎",
-            item_list_id: "upcoming_tours",
-            item_list_name: "即將出團",
-            price: 30.03,
-            quantity: 1
-          }
-        ]
-      });
+<script>
+    // 「我要報名加入購物車」按鈕：顯示提示並送出 GA4 add_to_cart 事件。
+  var abc = document.querySelector(".btnstyle");
+  abc.addEventListener("click", function (event) {
+    // 1. 雖然我們用了 preventDefault() 阻止了預設跳轉
+    event.preventDefault();
 
-      alert("您已將商品加入購物車");
-    }, false);
-  </script>
+    // 2. 執行你的 GA4 事件追蹤
+    gtag("event", "add_to_cart", {
+      currency: "新台幣",
+      value: 30.03,
+      items: [
+        {
+          item_id: "TOUR_GARDEN_AFTERNOON_DAY",
+          item_name: "花園午後一日遊",
+          affiliation: "MyParisTrip 小法旅",
+          index: 0,
+          item_brand: "MyParisTrip",
+          item_category: "花季景觀",
+          item_category2: "一日遊",
+          item_category3: "巴黎",
+          item_list_id: "upcoming_tours",
+          item_list_name: "即將出團",
+          price: 30.03,
+          quantity: 1
+        }
+      ]
+    });
+
+    // 3. 執行提示
+    alert("您已將商品加入購物車");
+
+    // 4. [新增] 手動觸發頁面跳轉
+    // 這行程式碼會強迫瀏覽器前往指定的目標頁面
+    window.location.href = "goal.html";
+    
+  }, false);
+</script>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script>
     const spots = {
