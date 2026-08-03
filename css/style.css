@@ -38,7 +38,7 @@ img {
 
 .bi-buildings-fill::before { content: "△"; }
 .bi-bag-heart-fill::before { content: ""; }
-.bi-person-fill::before { content: "●"; }
+.bi-person-fill::before { content: ""; }
 .bi-search::before { content: "⌕"; }
 .bi-palette2::before { content: "◇"; }
 .bi-bank2::before { content: "▥"; }
