@@ -37,7 +37,7 @@ img {
 }
 
 .bi-buildings-fill::before { content: "△"; }
-.bi-bag-heart-fill::before { content: "▣"; }
+.bi-bag-heart-fill::before { content: ""; }
 .bi-person-fill::before { content: "●"; }
 .bi-search::before { content: "⌕"; }
 .bi-palette2::before { content: "◇"; }
@@ -48,7 +48,7 @@ img {
 .bi-globe-europe-africa::before { content: "◎"; }
 .bi-airplane::before { content: "✈"; }
 .bi-calendar2-week::before { content: "□"; }
-.bi-camera-fill::before { content: "▣"; }
+.bi-camera-fill::before { content: ""; }
 .bi-telephone::before { content: "☎"; }
 .bi-envelope::before { content: "✉"; }
 .bi-facebook::before { content: "FB"; }
@@ -56,7 +56,7 @@ img {
 .bi-chat-dots::before { content: "LINE"; }
 
 .site-shell {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   overflow: hidden;
   background: #fff;
@@ -117,7 +117,7 @@ img {
 }
 
 .hero::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   left: -5%;
   right: -5%;
