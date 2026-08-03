@@ -136,8 +136,8 @@ img {
 
 .hero h1 {
   color: var(--brand-blue);
-  font-size: clamp(32px, 4.5vw, 58px);
-  font-weight: 900;
+  font-size: clamp(28px, 3vw, 58px);
+  font-weight: 700;
   line-height: 1.28;
   text-shadow: 0 2px 15px rgba(255,255,255,.75);
 }
